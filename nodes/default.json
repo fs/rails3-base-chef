@@ -1,0 +1,31 @@
+{
+  "set_fqdn": "change-me.flatstack.com",
+
+  "ruby": {
+    "version": "1.9.3-p385",
+    "bundler_version": "1.2.4"
+  },
+
+  "rails": {
+    "application": {
+      "name": "example-app",
+      "domain": "example.com",
+      "environment": "production",
+      "packages": []
+    }
+  },
+
+  "postgresql": {
+    "password": {
+      "postgres": "change-me"
+    }
+  },
+
+  "run_list": [
+    "recipe[flatstack::base]",
+    "recipe[flatstack::postgresql]",
+    "recipe[flatstack::ruby]",
+    "recipe[flatstack::rails]",
+    "recipe[flatstack::rails_application]"
+  ]
+}
