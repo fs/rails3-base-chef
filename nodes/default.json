@@ -11,7 +11,7 @@
       "name": "example-app",
       "domain": "example.com",
       "environment": "production",
-      "packages": []
+      "packages": ["libxslt-dev", "libxml2-dev"]
     }
   },
 
