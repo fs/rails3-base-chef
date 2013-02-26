@@ -25,6 +25,7 @@
     "recipe[flatstack::base]",
     "recipe[flatstack::postgresql]",
     "recipe[flatstack::ruby]",
+    "recipe[flatstack::deployer]",
     "recipe[flatstack::rails]",
     "recipe[flatstack::rails_application]"
   ]
