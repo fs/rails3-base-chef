@@ -1,6 +1,5 @@
 # Prepare Rails server with Chef Solo
 
-
 ## Prepare local environment
 
 * Preferred way to use is to clone this repo and customise for your project
@@ -16,27 +15,5 @@
 
 ## Continue with Capistrano
 
-```ruby
-require "bundler/capistrano"
-
-server "HOSTNAME", :web, :app, :db, primary: true
-
-set :user, "deployer"
-set :application, "APPLICATION_NAME"
-set :deploy_to, "/var/www/#{application}"
-set :deploy_via, :remote_cache
-set :use_sudo, false
-
-set :scm, "git"
-set :repository, "git@github.com:fs/#{application}.git"
-set :branch, "develop"
-
-default_run_options[:pty] = true
-ssh_options[:forward_agent] = true
-
-set :default_environment, {
-  'PATH' => '/opt/rbenv/shims:/opt/rbenv/bin:$PATH'
-}
-
-```
-
+Checkout [deploy branch of Rails3-Base](https://github.com/fs/rails3-base/tree/deploy)
+and [deploy.rb](https://github.com/fs/rails3-base/blob/deploy/config/deploy.rb)
