@@ -3,8 +3,8 @@
 
 ## Prepare local environment
 
-* Preferred way to use is to clone this repo and customise for your project 
-  `git clone git://github.com/fs/application-chef.git --origin upstream APPLICATION-NAME-chef`
+* Preferred way to use is to clone this repo and customise for your project
+  `git clone git://github.com/fs/rails3-base-chef.git --origin upstream APPLICATION-NAME-chef`
 * Bootstrap local environment with `script/bootstrap`
 
 ## Prepare server
