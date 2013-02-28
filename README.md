@@ -1,5 +1,8 @@
 # Prepare Rails server with Chef Solo
 
+This application Chef Solo uses [Flatstack's Rails Chef recipes](https://github.com/fs/chef-rails-cookbooks).
+Check them out for default attributes.
+
 ## Prepare local environment
 
 * Preferred way to use is to clone this repo and customise for your project
