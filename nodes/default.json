@@ -11,6 +11,9 @@
       "name": "example-app",
       "domain": "example.com",
       "environment": "production",
+      "db": {
+        "password": "change-me"
+      },
       "packages": ["libxslt-dev", "libxml2-dev"]
     }
   },
