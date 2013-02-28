@@ -20,7 +20,6 @@ SITE
     hostname (0.0.4)
     htop (1.0.0)
     magic_shell (0.2.0)
-    motd-tail (1.2.0)
     mysql (2.1.2)
       build-essential (>= 0.0.0)
       openssl (>= 0.0.0)
@@ -31,7 +30,7 @@ SITE
     rbenv (1.4.1)
       git (>= 0.0.0)
       ohai (>= 1.1)
-    runit (1.0.6)
+    runit (1.1.0)
       build-essential (>= 0.0.0)
     user (0.3.0)
     vim (1.0.2)
@@ -41,20 +40,20 @@ SITE
     yum (2.1.0)
 
 GIT
-  remote: git://github.com/fs/chef-cookbooks.git
+  remote: git://github.com/fs/chef-rails-cookbooks.git
   ref: master
-  sha: 2431afe63a8ec22464a9d9aaecd6078fdabca49c
+  sha: 4ddf56825b186ec51b935cdc5e8f602472b68815
   specs:
-    flatstack (0.1.0)
+    flatstack (0.1.1)
       apt (>= 0.0.0)
       database (>= 0.0.0)
       git (>= 0.0.0)
       hostname (>= 0.0.0)
       htop (>= 0.0.0)
       magic_shell (>= 0.0.0)
-      motd-tail (>= 0.0.0)
       mysql (>= 0.0.0)
       nginx (>= 0.0.0)
+      ohai (>= 0.0.0)
       postgresql (>= 0.0.0)
       rbenv (>= 0.0.0)
       user (>= 0.0.0)
