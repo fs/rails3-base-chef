@@ -23,7 +23,7 @@ SITE
       build-essential (>= 0.0.0)
       openssl (>= 0.0.0)
     ohai (1.1.8)
-    openssl (1.0.0)
+    openssl (1.0.2)
     postfix (2.1.4)
     postgresql (2.2.2)
       openssl (>= 0.0.0)
@@ -37,19 +37,20 @@ SITE
     windows (1.8.4)
       chef_handler (>= 0.0.0)
     xfs (1.1.0)
-    yum (2.1.0)
+    yum (2.2.0)
 
 GIT
   remote: git://github.com/fs/chef-rails-cookbooks.git
   ref: master
-  sha: ba166fb58e75092a15237421662836ed14195bd0
+  sha: 40d5b5a97833db6f744c3eed4c752fe5d1ca2691
   specs:
-    flatstack (0.1.2)
+    flatstack (0.1.3)
       apt (= 1.9.0)
       database (= 1.3.12)
       git (= 2.3.0)
       hostname (= 0.0.4)
       htop (= 1.0.0)
+      logentries (= 0.1.0)
       mysql (= 2.1.2)
       nginx (= 1.0.0)
       ohai (= 1.1.8)
@@ -58,6 +59,14 @@ GIT
       rbenv (= 1.4.1)
       user (= 0.3.0)
       vim (= 1.0.2)
+
+GIT
+  remote: git://github.com/jagregory/chef-logentries.git
+  ref: master
+  sha: 7cddda0cc95e2652d628120a0a2733295c58a7fe
+  specs:
+    logentries (0.1.0)
+      apt (>= 0.0.0)
 
 GIT
   remote: git://github.com/jsierles/chef_cookbooks.git
@@ -69,5 +78,6 @@ GIT
 
 DEPENDENCIES
   flatstack (>= 0)
+  logentries (>= 0)
   nginx (>= 0)
 

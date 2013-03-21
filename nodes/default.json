@@ -1,6 +1,14 @@
 {
   "set_fqdn": "change-me.flatstack.com",
 
+  "logentries": {
+    "account_key": "",
+    "logs": {
+      "Syslog": "/var/log/syslog",
+      "Auth": "/var/log/auth.log"
+    }
+  },
+
   "ruby": {
     "version": "1.9.3-p385",
     "bundler_version": "1.2.4"
@@ -26,6 +34,7 @@
 
   "run_list": [
     "recipe[flatstack::base]",
+    "recipe[flatstack::logentries]",
     "recipe[flatstack::postgresql]",
     "recipe[flatstack::ruby]",
     "recipe[flatstack::deployer]",

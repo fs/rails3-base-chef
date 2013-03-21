@@ -10,3 +10,6 @@ cookbook 'flatstack',
 cookbook 'nginx',
   git: 'git://github.com/jsierles/chef_cookbooks.git',
   path: 'nginx'
+
+cookbook 'logentries',
+  git: 'git://github.com/jagregory/chef-logentries.git'
