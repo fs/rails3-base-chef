@@ -26,6 +26,7 @@
 
   "run_list": [
     "recipe[flatstack::base]",
+    "recipe[flatstack::security]",
     "recipe[flatstack::postgresql]",
     "recipe[flatstack::ruby]",
     "recipe[flatstack::deployer]",
