@@ -11,6 +11,12 @@ cookbook 'nginx',
   git: 'git://github.com/jsierles/chef_cookbooks.git',
   path: 'nginx'
 
+cookbook 'redis',
+  git: 'git@github.com:ctrabold/chef-redis.git'
+
+cookbook 'mongodb',
+  git: 'git@github.com:edelight/chef-mongodb.git'
+
 cookbook 'logentries',
   git: 'git://github.com/jagregory/chef-logentries.git'
 
