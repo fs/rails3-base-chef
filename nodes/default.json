@@ -16,13 +16,13 @@
 
   "rails": {
     "application": {
-      "name": "example-app",
+      "name": "rails3-base",
       "domain": "example.com",
       "environment": "production",
       "db": {
         "password": "change-me"
       },
-      "packages": ["libxslt-dev", "libxml2-dev"]
+      "packages": ["libxslt-dev", "libxml2-dev", "imagemagick", "libmagickcore-dev", "libmagickwand-dev"]
     }
   },
 
@@ -33,13 +33,6 @@
   },
 
   "run_list": [
-    "recipe[flatstack::base]",
-    "recipe[flatstack::security]",
-    "recipe[flatstack::logentries]",
-    "recipe[flatstack::postgresql]",
-    "recipe[flatstack::ruby]",
-    "recipe[flatstack::deployer]",
-    "recipe[flatstack::rails]",
-    "recipe[flatstack::rails_application]"
+    "recipe[application]"
   ]
 }

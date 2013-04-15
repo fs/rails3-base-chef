@@ -1,0 +1,7 @@
+include_recipe 'flatstack::base'
+include_recipe 'flatstack::deployer'
+include_recipe 'flatstack::logentries'
+include_recipe 'flatstack::ruby'
+include_recipe 'flatstack::rails'
+include_recipe 'flatstack::rails_application'
+include_recipe 'flatstack::postgresql_server'
